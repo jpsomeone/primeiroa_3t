@@ -1,42 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CREVELARO</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primeiro B- Maria Luiza</title>
   <script src="estudo.js"></script>
-  <link rel="stylesheet" href="geral.css">
+  <link rel="stylesheet" href="estilo.css">
+
 </head>
 
 <body>
-<input type="checkbox" id="calcFin">
-<div class="calculadora"></div>
-  <label for="calcFin"><h3>Financeira</h3></label>
-  <div id="sptotal">
-    <span id="total">Total: 0,00</span>
+
+
+  <div class="calculadora">
+
+    <div id="sptotalgeral">
+      <span id="totalgeral">Total:0,00</span><br>
+    </div>
+    Valor: <input id="valor" placeholder="R$" type="text"><br>
+    Juros(mensais): <input id="juros" placeholder="% mes" type="text"><br>
+    Nr Meses: <input id="meses" placeholder="Tempo" type="text"><br>
+    <button onclick="total()">Enviar</button>
   </div>
-  Capital: <input id="valor" type="text"><br>
-  Juros(mensais): <input id="juros" type="text"><br>
-  Nr de Meses: <input id="meses" type="text"><br>
-  <button onclick="calcula()">Enviar</button>
-  <div id="splistameses">
-    <span id="listameses"></span>
+  <div>
+    <span id="mes">meses</span>
+
   </div>
-</div>
-  <br><br><br><br>
-  Valor 1: <input id="v1" type="text"><br>
-  <button onclick="operacao('+')">Somar</button>
-  <button onclick="operacao('-')">Subtrair</button>
-  <button onclick="operacao('*')">Multiplicar</button>
-  <button onclick="operacao('/')">Dividir</button>
-  <br>
-  Valor 2: <input id="v2" type="text">
-  <button onclick="calcule('+')">Calcule</button><br><br>
-  <span id="resultado">0,00</span>
+
+    <div class="calcESG">
+         <div class="spRai">
+           <span id="raiz">x1:?  x2:?</span>
+         </div>
+         a: <input id="a" type="text"> <br>
+         b: <input id="b" type="text"> <br>
+         c: <input id="c" type="text"> <br>
+
+         <button onclick="calcularaiz()">Calcula</button>
+      
+    </div>
 
 
 
+
+
+
+
+
+
+  <br><br><br><br><br><br><br>
+  <span id="resul">Resultado 0,00</span><br>
+
+  primeiro Numero : <input id="n1" type="text"><br>
+  segundo Numero : <input id="n2" type="text"><br>
+  terceiro Numero : <input id="n3" type="text"><br>
+  quarto Numero : <input id="n4" type="text"><br>
+
+  <button onclick="media()">calcular a media</button>
+  <button onclick="multiplica()">multiplicar</button>
+  <button onclick="soma()">somar</button>
+
+    
 </body>
-</html>
 
+</html>
